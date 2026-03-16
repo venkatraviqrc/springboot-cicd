@@ -1,0 +1,19 @@
+package com.devops;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.*;
+
+@SpringBootApplication
+@RestController
+public class BackendApplication {
+
+    @GetMapping("/")
+    public String hello() {
+        return "Hello DevOps";
+    }
+
+    public static void main(String[] args) {
+        SpringApplication.run(BackendApplication.class, args);
+    }
+}
