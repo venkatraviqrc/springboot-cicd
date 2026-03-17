@@ -16,3 +16,15 @@ nohup: ignoring input
 2026-03-16 11:35:24.871 DEBUG 2070 --- [           main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
 2026-03-16 11:35:25.087  INFO 2070 --- [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8081
 2026-03-16 11:35:25.102  INFO 2070 --- [           main] app.App                                  : Started App in 2.971 seconds (JVM running for 3.545)
+2026-03-16 11:56:11.528 DEBUG 2070 --- [or-http-epoll-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [c636c974-1] HTTP GET "/robots.txt"
+2026-03-16 11:56:11.575 DEBUG 2070 --- [or-http-epoll-2] o.s.w.r.handler.SimpleUrlHandlerMapping  : [c636c974-1] Mapped to ResourceWebHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/]]
+2026-03-16 11:56:11.580 DEBUG 2070 --- [or-http-epoll-2] o.s.w.r.resource.ResourceWebHandler      : [c636c974-1] Resource not found
+2026-03-16 11:56:11.631 DEBUG 2070 --- [or-http-epoll-2] org.springframework.web.HttpLogging      : [c636c974-1] Resolved [ResponseStatusException: 404 NOT_FOUND] for HTTP GET /robots.txt
+2026-03-16 11:56:11.679 DEBUG 2070 --- [or-http-epoll-2] o.s.http.codec.json.Jackson2JsonEncoder  : [c636c974-1] Encoding [{timestamp=Mon Mar 16 11:56:11 UTC 2026, path=/robots.txt, status=404, error=Not Found, message=null (truncated)...]
+2026-03-16 11:56:11.746 DEBUG 2070 --- [or-http-epoll-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [c636c974-1] Completed 404 NOT_FOUND
+2026-03-16 11:56:13.231 DEBUG 2070 --- [or-http-epoll-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [65ee5316-2] HTTP GET "/"
+2026-03-16 11:56:13.234 DEBUG 2070 --- [or-http-epoll-3] s.w.r.r.m.a.RequestMappingHandlerMapping : [65ee5316-2] Mapped to app.App#hello()
+2026-03-16 11:56:13.250 DEBUG 2070 --- [or-http-epoll-3] o.s.w.r.r.m.a.ResponseBodyResultHandler  : [65ee5316-2] Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+2026-03-16 11:56:13.250 DEBUG 2070 --- [or-http-epoll-3] o.s.w.r.r.m.a.ResponseBodyResultHandler  : [65ee5316-2] 0..1 [java.lang.String]
+2026-03-16 11:56:13.252 DEBUG 2070 --- [or-http-epoll-3] o.s.core.codec.CharSequenceEncoder       : [65ee5316-2] Writing "Hello DevOps"
+2026-03-16 11:56:13.255 DEBUG 2070 --- [or-http-epoll-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [65ee5316-2] Completed 200 OK
