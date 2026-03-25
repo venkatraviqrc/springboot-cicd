@@ -1,4 +1,3 @@
-/home/ssm-user/3/3-backend/src/main/java/app/Greeting.java
-/home/ssm-user/3/3-backend/src/main/java/app/App.java
-/home/ssm-user/3/3-backend/src/main/java/app/WelcomeHandler.java
-/home/ssm-user/3/3-backend/src/main/java/app/GreetingHandler.java
+/home/ssm-user/SpringSample/SamDemo/src/main/java/com/example/demo/springboot-cicd/src/main/java/app/GreetingHandler.java
+/home/ssm-user/SpringSample/SamDemo/src/main/java/com/example/demo/springboot-cicd/src/main/java/app/WelcomeHandler.java
+/home/ssm-user/SpringSample/SamDemo/src/main/java/com/example/demo/springboot-cicd/src/main/java/app/Greeting.java
